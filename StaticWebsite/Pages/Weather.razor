@@ -41,9 +41,9 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        var proxyUrl = "https://learnbackend2.azurewebsites.net/weatherforecast";
-        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>(proxyUrl);
+        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("https://backendwebapp-tp9l.onrender.com/weatherforecast");
     }
+ 
 
     public class WeatherForecast
     {
